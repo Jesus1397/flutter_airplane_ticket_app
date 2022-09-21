@@ -10,9 +10,9 @@ class QrInfoWidget extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Container(
       padding: EdgeInsets.only(
-        left: size.width * 0.25,
-        top: 20,
-        bottom: 20,
+        left: size.width * 0.30,
+        top: 40,
+        bottom: 30,
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -23,6 +23,7 @@ class QrInfoWidget extends StatelessWidget {
             'YOUR QR CODE',
             style: TextStyle(
               color: Colors.white,
+              fontSize: 20,
               fontWeight: FontWeight.w900,
             ),
           ),
@@ -64,7 +65,7 @@ class QrInfoWidget extends StatelessWidget {
                         style: TextStyle(color: Colors.white),
                       ),
                       SizedBox(
-                        width: size.width * 0.3,
+                        width: size.width * 0.2,
                       ),
                       const Text(
                         'Learn more',
